@@ -1,16 +1,16 @@
 # Lakasz_Helena_01_11.22
-Temetkezési iroda programja:
-- 2 .txt file:
-  -egyikben a halottak nevei szerepelnek
-  -a másikban pedig hogy ki mennyi élet évet élt
-  
-  
-----------------------------------------------------
-  Menü:
-    - 0 - Kilépés 
-    - 1 - Halottak nevei
-    - 2 - Élt életév
-    - 3 - Új elhunyt felvétele
-    - 4 - Elhunyt törlése
-    - 5 - Élt életév módosítása
-----------------------------------------------------
+#Korház programja:
+#- 1 .txt file:
+#   - a file tartalmazza a betegek neveit a betegségüket és a korházban tartózkásuk ideét is
+#  
+#
+#---------------------------------------------------
+#  Menü:
+#    - 0 - Kilépés 
+#    - 1 - Betegek nevei
+#    - 2 - Betegségük
+#    - 3 - Új beteg felvétele
+#    - 4 - Beteg törlése
+#    - 5 - Leghosszabb ideig bent lévő beteg
+#    - 6 - Legkevesebb ideig bent lévő beteg
+#---------------------------------------------------
