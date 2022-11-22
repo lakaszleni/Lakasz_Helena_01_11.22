@@ -1,7 +1,7 @@
 # Lakasz_Helena_01_11.22
 #Korház programja:
-#- 1 .txt file:
-#   - a file tartalmazza a betegek neveit a betegségüket és a korházban tartózkásuk ideét is
+#   - 1 .txt file:
+#       - a file tartalmazza a betegek neveit a betegségüket és a korházban tartózkásuk ideét is
 #  
 #
 #---------------------------------------------------
