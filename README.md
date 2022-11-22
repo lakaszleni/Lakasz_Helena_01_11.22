@@ -7,10 +7,10 @@ Temetkezési iroda programja:
   
 ----------------------------------------------------
   Menü:
-    -0 - Kilépés
-    -1 - Halottak nevei
-    -2 - Élt életév
-    -3 - Új elhunyt felvétele
-    -4 - Elhunyt törlése
-    -5 - Élt életév módosítása
+    - 0 - Kilépés 
+    - 1 - Halottak nevei
+    - 2 - Élt életév
+    - 3 - Új elhunyt felvétele
+    - 4 - Elhunyt törlése
+    - 5 - Élt életév módosítása
 ----------------------------------------------------
