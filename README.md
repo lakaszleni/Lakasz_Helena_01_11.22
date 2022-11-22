@@ -4,12 +4,13 @@ Temetkezési iroda programja:
   -egyikben a halottak nevei szerepelnek
   -a másikban pedig hogy ki mennyi élet évet élt
   
+  
 ----------------------------------------------------
-Menü:
--0 - Kilépés
--1 - Halottak nevei
--2 - Élt életév
--3 - Új elhunyt felvétele
--4 - Elhunyt törlése
--5 - Élt életév módosítása
+  Menü:
+    -0 - Kilépés
+    -1 - Halottak nevei
+    -2 - Élt életév
+    -3 - Új elhunyt felvétele
+    -4 - Elhunyt törlése
+    -5 - Élt életév módosítása
 ----------------------------------------------------
