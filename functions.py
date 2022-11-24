@@ -1,3 +1,4 @@
+from data import nevek, betegségek
 from os import system
 fajlnev='data.csv'
 
