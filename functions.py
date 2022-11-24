@@ -1,4 +1,4 @@
-from data import nevek, betegségek
+from data import nevek, betegsegek
 from os import system
 fajlnev='data.csv'
 
@@ -19,4 +19,12 @@ def fajlBetoltes():
     for row in file:
         darabolt=row.strip().split(';')
         nevek.append(darabolt[0])
-        betegségek.append(darabolt[1])
+        betegsegek.append(darabolt[1])
+    file.close()
+
+def BetegekKiir():
+    system('cls')
+    print('~Betegek;')
+    for i in range(len(nevek)):
+        print(f'\t{nevek[i]}')
+    input()

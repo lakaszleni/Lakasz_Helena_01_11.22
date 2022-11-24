@@ -1,11 +1,13 @@
-from functions import menu
+from functions import menu, fajlBetoltes, BetegekKiir
 from os import system
 
-valasztas=''
-while valsztas!='0':
-    valsztas=menu()
-    if valsztas=='1':
-        pass
+fajlBetoltes()
+
+valasztas =''
+while valasztas !='0':
+    valsztas = menu()
+    if valsztas == '1':
+        BetegekKiir()
     elif valasztas=='2':
         pass
     elif valasztas=='3':
