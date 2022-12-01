@@ -1,20 +1,23 @@
-from functions import menu, fajlBetoltes, BetegekKiir
+from functions import menu, fajlBetoltes, BetegekKiir, Teljes, ujBeteg
 from os import system
 
 fajlBetoltes()
 
-valasztas =''
+valasztas = ''
+
 while valasztas !='0':
-    valsztas = menu()
-    if valsztas == '1':
+    valasztas = menu()
+    if valasztas == '1':
         BetegekKiir()
-    elif valasztas=='2':
+    elif valasztas == '2':
+        system('cls')
+        Teljes()
+        input('...')
+    elif valasztas == '3':
+        ujBeteg()
+    elif valasztas == '4':
         pass
-    elif valasztas=='3':
+    elif valasztas == '5':
         pass
-    elif valasztas=='4':
-        pass
-    elif valasztas=='5':
-        pass
-    elif valasztas=='6':
+    elif valasztas == '6':
         pass

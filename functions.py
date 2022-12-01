@@ -22,9 +22,26 @@ def fajlBetoltes():
         betegsegek.append(darabolt[1])
     file.close()
 
+
+#1
 def BetegekKiir():
     system('cls')
     print('~Betegek;')
     for i in range(len(nevek)):
         print(f'\t{nevek[i]}')
     input()
+
+#2
+def Teljes():
+    print('~Betegek;')
+    for i in range(len(nevek)):
+        print(f'\t{nevek[i]} - {betegsegek[i]}')
+
+#3
+def ujBeteg():
+    print('Új beteg felvétele')
+    nev=input('Kérem a beteg nevét: ')
+    nevek.append(nev)
+    betegseg=input('Kérem a betegségét: ')
+    betegsegek.append(betegseg)
+    input('A beteg sikeresen felvételre került...')
