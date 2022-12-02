@@ -45,3 +45,28 @@ def ujBeteg():
     betegseg=input('Kérem a betegségét: ')
     betegsegek.append(betegseg)
     input('A beteg sikeresen felvételre került...')
+
+def eredmenyMenteseFájlVégére(nev,betegsegek):
+    file=open(fajlnev,'a',encoding='utf-8')
+    file.write(f'\n{nev};{betegsegek}')
+    file.close()
+
+
+#4
+def betegTorlese():
+    system('cls')
+    print('~Beteg törlése; ')
+    BetegekKiir()
+    sSz=int(input('\nKit töröljünk?: '))
+    nevek.pop(sSz-1)
+    betegsegek.pop(sSz-1)
+    mentesFajlba()
+    input('Sikeres törlés.')
+
+def mentesFajlba():
+    file=open(fajlnev,'w',encoding='utf-8')
+    for i in range(len(nevek)):
+        if i>0:
+            file.write('\n')
+        file.write(f'{nevek[i]};{betegsegek[i]}')
+    file.close()
