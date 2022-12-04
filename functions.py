@@ -10,7 +10,7 @@ def menu():
     print('2 - Betegségük')
     print('3 - Új beteg felvétele')
     print('4 - Beteg törlése')
-    print('5 - Leghosszebb ideig bent lévő beteg')
+    print('5 - Betegség módosítása')
     print('6 - Legkevesebb ideig bent lévő beteg')
     return input('Választás: ')
 
@@ -46,27 +46,64 @@ def ujBeteg():
     betegsegek.append(betegseg)
     input('A beteg sikeresen felvételre került...')
 
-def eredmenyMenteseFájlVégére(nev,betegsegek):
-    file=open(fajlnev,'a',encoding='utf-8')
-    file.write(f'\n{nev};{betegsegek}')
-    file.close()
-
-
 #4
-def betegTorlese():
-    system('cls')
-    print('~Beteg törlése; ')
-    BetegekKiir()
-    sSz=int(input('\nKit töröljünk?: '))
-    nevek.pop(sSz-1)
-    betegsegek.pop(sSz-1)
-    mentesFajlba()
-    input('Sikeres törlés.')
+def kereses(keresett):
+    for index,ertek in enumerate(nevek):
+        if keresett == ertek:
+            return index
+    return -1
 
-def mentesFajlba():
-    file=open(fajlnev,'w',encoding='utf-8')
-    for i in range(len(nevek)):
-        if i>0:
-            file.write('\n')
-        file.write(f'{nevek[i]};{betegsegek[i]}')
+def Torles():
+    nevek.clear()
+    betegsegek.clear()
+    fajlBetoltes()
+    system('cls')
+    print('~Beteg törlése;')
+    torlendo = input('Törlendő beteg neve: ')
+
+    if kereses(torlendo) != -1:
+        nevek.remove(nevek[kereses(torlendo)])
+        betegsegek.remove(betegsegek[kereses(torlendo)])
+        saveFullFile()
+        print('Sikeres törlés!')
+        input('A továbblépéshez nyomja meg az [ENTER] billentyűt!')
+    else:
+        print('Nincs ilyen beteg!')
+        input('A továbblépéshez nyomja meg az [ENTER] billentyűt!')
+
+
+
+def Save(nevek, betegsegek):
+    file=open(fajlnev,'a',encoding='utf-8')
+    file.write(f'\n{nevek};{betegsegek}')
     file.close()
+
+
+def saveFullFile():
+    file = open(fajlnev, 'w', encoding = 'utf-8')
+    for i in range(len(nevek)):
+        file.write(f'{nevek[i]};{betegsegek[i]}')
+        if (i != len(nevek) -1):
+            file.write('\n')
+    file.close()
+
+#5
+def BetegsegModositas():
+    nevek.clear()
+    betegsegek.clear()
+    fajlBetoltes()
+    system('cls')
+    print('~Betegség módosítása;')
+    keresett = input('Módosítandó beteg neve: ')
+
+    if kereses(keresett) != -1:
+        print(f'Jelenlegi betegség: {betegsegek[kereses(keresett)]}')
+        betegsegek[kereses(keresett)] = input('Új betegség: ')
+        saveFullFile()
+        print('Sikeres módosítás!')
+        input('A továbblépéshez nyomja meg az [ENTER] billentyűt!')
+    else:
+        print('Nincs ilyen beteg!')
+        input('A továbblépéshez nyomja meg az [ENTER] billentyűt!')
+
+#6

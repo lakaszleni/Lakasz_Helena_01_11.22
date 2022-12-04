@@ -1,4 +1,4 @@
-from functions import menu, fajlBetoltes, BetegekKiir, Teljes, ujBeteg, betegTorlese
+from functions import menu, fajlBetoltes, BetegekKiir, Teljes, ujBeteg, Torles
 from os import system
 
 fajlBetoltes()
@@ -16,7 +16,7 @@ while valasztas !='0':
     elif valasztas == '3':
         ujBeteg()
     elif valasztas == '4':
-        betegTorlese()
+        Torles()
     elif valasztas == '5':
         pass
     elif valasztas == '6':

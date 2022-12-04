@@ -11,6 +11,6 @@
 #    - 2 - Betegségük
 #    - 3 - Új beteg felvétele
 #    - 4 - Beteg törlése
-#    - 5 - Leghosszabb ideig bent lévő beteg
+#    - 5 - Betegség módosítása
 #    - 6 - Legkevesebb ideig bent lévő beteg
 #---------------------------------------------------
