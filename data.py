@@ -1,2 +1,3 @@
 nevek=[]
 betegsegek=[]
+napok=[]

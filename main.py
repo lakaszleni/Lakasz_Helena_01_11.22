@@ -1,7 +1,7 @@
-from functions import menu, fajlBetoltes, BetegekKiir, Teljes, ujBeteg, Torles
+from functions import menu, fajlBetoltes, BetegekKiir, Teljes, ujBeteg, Torles, legkevesebbido, BetegsegModositas
 from os import system
+from data import nevek
 
-fajlBetoltes()
 
 valasztas = ''
 
@@ -18,6 +18,10 @@ while valasztas !='0':
     elif valasztas == '4':
         Torles()
     elif valasztas == '5':
-        pass
+        BetegsegModositas()
     elif valasztas == '6':
-        pass
+        system('cls')
+        print("~Legkevesebb ideig bent lévő beteg; ")
+        legkevesebbido()
+        print(nevek[legkevesebbido()])
+        input()
